@@ -1,0 +1,401 @@
+@import url(fonts.css);
+/* --------------------ROOT START-------------------- */
+:root {
+    --fontFirst: "Montserrat";
+    --fontSecond: "Trebuchet";
+    --body: #FFF;
+    --colorText: #323232;
+    --colorTitle: #7177f1;
+    --btnBg: #7177F1;
+    --btnColor: #FFF;
+    --logoLight: inline-block;
+    --logoDark: none;
+    --navLinkColor:#7177f1;
+    --sliderSubTitle: #323232;
+    --sliderDot: #828282;
+    --aboutTaglineBg: #FFF;
+    --aboutRateBg: #0FDAC2;
+    --aboutRateColor: #FFF;
+
+    
+    --scrollBg: black;
+    --colorWhite: #FFF;
+    --colorBlack: #000;
+
+    --capabilLine: #DDD;
+    --capabilColor: #FFF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    /* FIXED cross platform (min-width: 1200px;) */
+    font-family: var(--fontFirst);
+    background: var(--body);
+    color: var(--colorText);
+    overflow-x: hidden;
+}
+.container {
+    /* FIXED cross platform (width: 1200px;) */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--colorTitle);
+    border-radius: 3px;
+}
+.text-limit {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    cursor: pointer;
+}
+.text-limit:active {
+    -webkit-line-clamp: unset;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+.button {
+    background: var(--btnBg);
+    color: var(--btnColor) !important;
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+    display: block;
+    transition: 800ms;
+    text-align: center;
+}
+.button:hover {
+    background: var(--btnColor);
+    color: var(--btnBg) !important;
+}
+.rectangle {
+    border: 5px solid #9297EF;
+    position: absolute;
+    z-index: -1;
+}
+.rectangle_1 {
+    width: 80px;
+    height: 80px;
+    top: 14px;
+    left: 33px;
+    transform: rotate(-45.23deg);
+}
+.rectangle_2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-color: #790FF1;
+    left: 244px;
+    top: -63px;
+}
+.rectangle_3 {
+    width: 98px;
+    height: 98px;
+    right: 159px;
+    top: -13px;
+}
+.rectangle_4 {
+    width: 80px;
+    height: 80px;
+    border-color: #7177F1;
+    transform: rotate(41.09deg);
+    right: 315px;
+    bottom: 198px;
+}
+.shape {
+    position: absolute;
+    z-index: -1;
+    max-width: 60%;
+}
+.shape_right {
+    right: 0;
+    top: -200px;
+}
+.title {
+    color: var(--colorTitle);
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+/* --------------------ROOT END-------------------- */
+
+/* --------------------NAV START-------------------- */
+/* --------------------NAV END-------------------- */
+
+/* --------------------ROOT END-------------------- */
+/* --------------------ROOT END-------------------- */
+
+/* --------------------HEADER START-------------------- */
+/* --------------------NAV START-------------------- */
+.logo__light, .logo__dark {
+    max-width: 190px;
+    width: 100%;
+    display: var(--logoLight);
+}
+.logo__dark {
+    display: var(--logoDark);
+}
+.navbar {
+    padding: 13px 0;
+}
+.menu {
+    max-width: 654px;
+    width: 100%;
+}
+.menu__link {
+    font-size: 24px;
+    line-height: 16px;
+    color: var(--navLinkColor);
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    transition: 500ms;
+}
+.menu__link:hover {
+    color: var(--colorText);
+}
+.menu__icon {
+    font-size: 28px;
+}
+.navbar-toggler {
+    color: var(--navLinkColor);
+    font-size: 30px;
+    border: none;
+    transition: 500ms;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+    transform: rotateX(180deg);
+}
+/* --------------------NAV END-------------------- */
+/* --------------------HEADER END-------------------- */
+
+/* --------------------MAIN START-------------------- */
+/* ----------SECTION ONE SLIDER SUBTITLE---------- */
+.slider__subtitle {
+    font-size: 24px;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+    color: var(--sliderSubTitle);
+}
+.slider__title {
+    color: var(--colorTitle);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.slider__btn {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+}
+.slider__logo {
+    max-width: 90px;
+    margin-bottom: 15px;
+}
+.slider__name {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    color: var(--colorTitle);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.slider__img {
+    max-height: 500px;
+    max-width: 100%;
+    object-fit: contain;
+}
+.slider .slider__dot {
+    background: var(--sliderDot);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 15px;
+}
+.slider .slider__dot.active {
+    background: var(--colorTitle);
+}
+.slider__indicators {
+    position: static;
+    margin: 50px 0 0 0;
+}
+.slider {
+    margin-top: 30px;
+    position: relative;
+}
+/* ----------SECTION TWO ABOUT---------- */
+.about__tagline {
+    background: var(--aboutTaglineBg);
+    box-shadow: 0px 0px 20px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    position: absolute;
+    top: 24;
+    left: 0;
+    padding: 24px 30px 24px 20px;
+    line-height: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.about__rate {
+    position: absolute;
+    background: var(--aboutRateBg);
+    color: var(--aboutRateColor);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -15px;
+    right: -10px;
+}
+.about__img {
+    max-width: 460px;
+    width: 100%;
+}
+.about__content {
+    background: var(--body);
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    padding: 30px;
+    height: 100%;
+}
+.about__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--colorTitle);
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.about__desc {
+    font-style: 18px;
+    line-height: 150%;
+    text-transform: capitalize;
+    margin-bottom: 27px;
+}
+.about__desc:last-of-type {
+    margin-bottom: 20px;
+}
+.about__btn {
+    max-width: 190px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 80px;
+    padding: 14px;
+    text-align: center;
+}
+.about {
+    margin-top: 75px;
+    position: relative;
+}
+/* ----------SECTION THREE CAPABIL---------- */
+.accordion {
+    background: var(--body);
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+.capabil__btn {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--colorTitle);
+    text-transform: uppercase;
+    padding: 15px 30px;
+    position: relative;
+}
+.capabil__btn:hover {
+    color: var(--colorTitle);
+}
+.capabil__btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background: var(--capabilLine);
+    right: 10px;
+    left: 10px;
+}
+.capabil__logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: left;
+    margin-right: 15px;
+}
+.capabil__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 34px;
+    line-height: 30px;
+    display: none;
+}
+.capabil__arrow {
+    margin-left: auto;
+    font-size: 24px;
+    transition: 500ms;
+}
+.capabil__desc {
+    background: var(--colorTitle);
+    color: var(--capabilColor);
+    padding: 10px 30px 50px 30px;
+}
+.capabil__btn:not(.collapsed) {
+    background: var(--colorTitle);
+    color: var(--capabilColor);
+}
+.capabil__btn:not(.collapsed) .capabil__logo {
+    display: none;
+}
+.capabil__btn:not(.collapsed) .capabil__icon {
+    display: inline-block;
+}
+.capabil__btn:not(.collapsed) .capabil__arrow {
+    transform: rotateX(180deg);
+}
+.capabil__btn:not(.collapsed)::after {
+    display: none;
+}
+/* ----------SECTION FOUR---------- */
+/* ----------SECTION FIVE---------- */
+/* ----------SECTION SIX---------- */
+/* --------------------MAIN END-------------------- */
+
+/* --------------------FOOTER START-------------------- */
+/* --------------------FOOTER END-------------------- */
