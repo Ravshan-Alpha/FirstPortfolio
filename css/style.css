@@ -24,6 +24,8 @@
 
     --capabilLine: #DDD;
     --capabilColor: #FFF;
+
+    --worksShadow: 0px 0px 2px rgba(0, 0, 0, 0.35);
 }
 * {
     margin: 0;
@@ -123,6 +125,20 @@ h1, h2, h3, h4, h5, h6, p {
     right: 315px;
     bottom: 198px;
 }
+.rectangle_5 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    left: 342px;
+    top: 97px;
+}
+.rectangle_6 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    right: 114px;
+    top: -69px;
+}
 .shape {
     position: absolute;
     z-index: -1;
@@ -139,6 +155,7 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
     margin-top: 75px;
     margin-bottom: 30px;
+    text-transform: capitalize;
 }
 /* --------------------ROOT END-------------------- */
 
@@ -375,6 +392,8 @@ h1, h2, h3, h4, h5, h6, p {
     background: var(--colorTitle);
     color: var(--capabilColor);
     padding: 10px 30px 50px 30px;
+    font-size: 18px;
+    line-height: 150%;
 }
 .capabil__btn:not(.collapsed) {
     background: var(--colorTitle);
@@ -392,7 +411,58 @@ h1, h2, h3, h4, h5, h6, p {
 .capabil__btn:not(.collapsed)::after {
     display: none;
 }
-/* ----------SECTION FOUR---------- */
+.capabil__item:last-of-type .capabil__btn::after {
+    display: none;
+}
+.capabil__img {
+    max-width: 630px;
+    width: 100%;
+}
+.capabil {
+    position: relative;
+}
+/* ----------SECTION FOUR WORKS---------- */
+.works__link {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--colorTitle);
+    text-transform: uppercase;
+    background: var(--body);
+    box-shadow: var(--worksShadow)
+}
+.works__link.active, .works__link:hover {
+    background: var(--colorTitle);
+    color: var(--body);
+}
+.works__item:first-of-type .works__link {
+    border-radius: 8px 8px 0 0;
+}
+.works__item:last-of-type .works__link {
+    border-radius: 0 0 8px 8px;
+}
+.works__img {
+    width: 100%;
+    max-height: 320px;
+    border-radius: 0 0 8px 8px;
+    object-fit: cover;
+}
+.works__content {
+    background: var(--body);
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    padding: 20px 30px 20px 20px;
+}
+.works__title {
+    color: var(--colorTitle);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.works__span {
+    text-transform: uppercase;
+}
 /* ----------SECTION FIVE---------- */
 /* ----------SECTION SIX---------- */
 /* --------------------MAIN END-------------------- */

@@ -7,6 +7,8 @@
         --sliderSubTitle: #EBEBEB;
         --sliderDot: #EBEBEB;
         --aboutTaglineBg: #7177F1;
+
+        --worksShadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
     }
 }
 @media (max-width: 991px) {
@@ -35,5 +37,8 @@
     .about__tagline {
         top: 0;
         left: 15px;
+    }
+    .capabil__btn, .capabil__desc {
+        font-size: 16px;
     }
 }
