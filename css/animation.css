@@ -17,7 +17,6 @@
         transform: rotate(-66.96deg);
     }
 }
-
 .rectangle_2 {
     animation: move2;
     animation-duration: 10s;
@@ -30,5 +29,63 @@
     100% {
         top: 237px;
         left: 566px;
+    }
+}
+.rectangle_3 {
+    animation: move3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes move3 {
+    0% {}
+    100% {
+        top: -100px;
+        right: 631px;
+        transform: rotate(-111.27deg);
+    }
+}
+.rectangle_4 {
+    animation: move4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes move4 {
+    0% {}
+    100% {
+        bottom: -562px;
+        right: 209px;
+        transform: rotate(180deg);
+    }
+}
+.rectangle_5 {
+    animation: move5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes move5 {
+    0% {}
+    100% {
+        left: 159px;
+        top: 600px;
+    }
+}
+.rectangle_6 {
+    animation: move6;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes move6 {
+    0% {}
+    100% {
+        right: 318px;
+        top: 710px;
     }
 }
