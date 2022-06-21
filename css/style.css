@@ -148,6 +148,10 @@ h1, h2, h3, h4, h5, h6, p {
     right: 0;
     top: -200px;
 }
+.shape__left {
+    left: 0;
+    top: -128px;
+}
 .title {
     color: var(--colorTitle);
     font-size: 40px;
@@ -444,9 +448,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .works__img {
     width: 100%;
-    max-height: 320px;
+    max-height: 370px;
     border-radius: 0 0 8px 8px;
     object-fit: cover;
+    object-position: top;
 }
 .works__content {
     background: var(--body);
@@ -463,9 +468,37 @@ h1, h2, h3, h4, h5, h6, p {
 .works__span {
     text-transform: uppercase;
 }
+.works__desc {
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: capitalize;
+    margin-bottom: 27px;
+}
+.works__btn {
+    max-width: 190px;
+    margin-left: 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.works {
+    position: relative;
+}
 /* ----------SECTION FIVE---------- */
 /* ----------SECTION SIX---------- */
 /* --------------------MAIN END-------------------- */
 
 /* --------------------FOOTER START-------------------- */
+.footer {
+    margin-top: 220px;
+    margin-bottom: 133px;
+}
+.footer .menu__link {
+    margin-top: 15px;
+    line-height: 1.2;
+}
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 15px;
+}
 /* --------------------FOOTER END-------------------- */
